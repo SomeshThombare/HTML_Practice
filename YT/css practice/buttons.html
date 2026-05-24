@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s-btn{
+            background-color: rgb(202, 0, 0);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 105px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+ 
+        }
+        .s-btn:hover{
+           opacity: 0.8;
+        }
+        .s-btn:active{
+            opacity: 0.4;
+        }
+
+        .j-btn{
+            background-color: white;
+            border-color: rgb(41, 118, 211);
+            border-style: solid;
+            border-width: 1px;
+            color: rgb(41, 118, 211);
+            height: 36px;
+            width: 62px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: background-color 1s,
+            color 1s;
+        }
+        .j-btn:hover{
+            background-color: rgb(41, 118, 218);
+            color: white;
+        }
+        .j-btn:active{
+            opacity: 0.7;
+        }
+        .t-btn{
+            background-color: rgba(2, 152, 255);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 70px;
+            border-radius: 18px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: box-shadow 0.15s,
+            color white;
+             }
+        .t-btn:hover{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+       
+        }
+        .r-btn{
+            background-color: black;
+            color: white;
+            width: 105px;
+            height: 40px;
+            border-radius: 2px;
+            border-width: 2px;
+            border-style: solid;
+            cursor: pointer;
+            transition: opacity 0.15s;
+
+        }
+        .r-btn:hover{
+            opacity: 0.8;
+        }
+        .a-btn{
+            background-color: rgb(255, 216, 20);
+            border-radius: 30px;
+            border:none;
+            width: 150px;
+            height: 40px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(255, 216, 20);
+
+        }
+        .a-btn:hover{
+            background-color: rgb(245, 205, 3) ;
+        }
+        
+        .sg-btn{
+            background-color: rgb(46, 164, 79);
+            color: white;
+            border-radius: 5px;
+            width: 90px;
+            height: 40px;
+            border-color: rgb(46, 164, 79);
+            border-style: solid;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: box-shodow 0.15s;
+            color: white;
+        }
+        .sg-btn:hover{
+            box-shadow: rgba(0px, 5px, 8px, 0.15s);
+        }
+        .gs-btn{
+            color: white;
+            width: 100px;
+            height: 35px;
+            background-color: rgb(121, 82, 179);
+            border-radius: 3px; 
+            border-color: rgb(121, 82, 179);
+            border-style: solid;
+            cursor: pointer;
+            border-width: 1px;
+            font-weight: bold;
+            transition:background-color 0.15s;
+        }
+        .gs-btn:hover{
+            background-color: rgb(99, 60, 165);
+        }
+        .d-btn{
+            background-color: rgb(219, 225, 231);
+            color:black;
+            width: 100px;
+            height: 35px;
+            border-radius: 3px;
+            margin-left: 10px;
+            border-style: solid;
+            border-color: rgb(61, 60, 60);
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.15s;
+        }
+        .d-btn:hover{
+            background-color:  rgb(108, 117, 125);
+            color: white;
+        }
+
+        .cw-btn{
+            background-color: rgb(10, 102, 194);
+            color: white;
+            font-weight: bold;
+            height: 40px;
+            width: 220px;
+            border-radius: 35px;
+            border-color: rgb(10, 102, 194);
+            border-style: solid;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+        .cw-btn:hover{
+            background-color: rgb(2, 70, 138);
+        }
+        .save-btn{
+            color: rgb(10, 102, 194);
+            width: 90px;
+            height: 40px;
+            border-radius: 30px;
+            border-color: rgb(10, 102, 194);
+            border-style: solid;
+            font-weight: bold;
+            margin-left: 10px;
+            transition: background-color 0.15s;
+            border-width: 0.15s;
+        }
+        .save-btn:hover{
+            background-color: rgb(226, 240, 254);
+            border-width: 2px;
+        }
+        
+        
+        #link{
+            font-size: 30px;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+        #link:hover{
+            color:rgb(199, 81, 31)
+        }
+
+        #p1{
+            color: rgb( 0,118,0);
+            font-weight: bold;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        #p2{
+            font-weight: bold;
+            margin-left: 20px;
+            font-size: 30px;
+        }
+        #p3{
+            margin-left:23px;
+            font-size: 20px;
+        }
+        .add-to-cart-btn{
+            border-radius: 20px;
+            width: 145px;
+            height: 35px;
+            background-color: rgb(255, 216, 20);
+            border-color: rgb(255, 216, 20);
+            border-style: solid;
+            margin-left: 23px;
+            font-weight: bold;
+            font-size: 15px;
+            
+        }
+        .add-to-cart-btn:hover{
+            background-color: rgb(247, 202, 0);
+        }
+        .add-to-cart-btn:active{
+            opacity: 0.5s;
+        }
+        .buy-now-btn{
+            background-color: rgb(255, 164, 28);
+            border-style: solid;
+            border-color: rgb(255, 164, 28);
+            border-radius: 20px;
+            width: 110px;
+            height: 35px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .buy-now-btn:hover{
+            background-color: rgb(250, 137, 0);
+            opacity: 0.5s;
+        }
+        .back-button{
+            margin-right: 8px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 16px;
+        }
+        .search-result{
+            margin-left: 4px;
+            margin-right: 4px;
+            font-size: 18px;
+        }
+        .next-button{
+            margin-left: 8px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 16px;
+        }
+        .stretch-btn{
+            background-color: green;
+            font-size:18px;
+            color: white;
+            padding: 8px 15px 8px 15px;
+            cursor: pointer;
+            transition: padding-top 1s,
+                        padding-bottom 1s,
+                        padding-left 1s,
+                        padding-right 1s;
+        }
+        .stretch-btn:hover{
+            padding: 10px 36px 18px 36px;
+        }
+
+        .shodow-btn{
+            background-color: green;
+            color: white;
+            border: none;
+            font-size: 18px;
+            padding: 8px 16px 8px 16px;
+            cursor: pointer;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+        }
+        .shodow-btn:hover{
+            margin-top: 3px;
+            margin-left: 3px;
+            box-shadow: none;
+        }
+        .stretch-button{
+            background-color: green;
+            color: white;
+            border: none;
+            font-size: 18px;
+            padding-top:8px ;
+            padding-bottom: 8px;
+            cursor: pointer;
+
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            transition: padding 0.15s;
+            margin: 0.15s;
+        }
+
+        .stretch-button:hover{
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="s-btn">SUBSCRIBE</button>
+    <button class="j-btn">JOIN</button>
+    <button class="t-btn">Tweet</button> <br> <br><br>
+
+    <button class="r-btn">Request Now</button>
+    <button class="a-btn">Add to Cart</button>
+    <button class="sg-btn">Sign Up</button> <br><br><br>
+
+    <button class="gs-btn">Get Started</button>
+    <button class="d-btn">Download</button> <br><br><br>
+
+    <button class="cw-btn">Apply on Company Website</button>
+    <button class="save-btn">Save</button> <br><br><br>
+
+    <div class="amz">
+       <a id='link' href="https://www.amazon.fr/" target="_blank">Back to Amazon</a>
+       <p id="p2">Nike Black Runnign Shoes</p> 
+       <p id="p1">$39 - in stock.</p>
+        <p id="p3">Free delivery tomorrow.</p>
+        <button class="add-to-cart-btn">Add to cart</button>
+        <button class="buy-now-btn">Buy now</button>
+    </div> <br><br><br>
+
+    <button class="back-button">Back</button>
+    <a class="search-result" href="https://google.com">1</a>
+    <a class="search-result" href="https://google.com">2</a>
+    <a class="search-result" href="https://google.com">3</a>
+    <a class="search-result" href="https://google.com">4</a>
+    <a class="search-result" href="https://google.com">5</a>
+    <button class="next-button">Next</button>
+    <br> <br> <br>
+
+    <button class="stretch-btn">Stretch</button>
+    <br><br><br>
+    <button class="shodow-btn">Shodow</button>
+    <br><br><br>
+    <div>
+        <button class="stretch-button">
+        One
+        </button>
+        <button class="stretch-button">
+        Two
+        </button>
+        <button class="stretch-button">
+        Three
+        </button>
+    </div>
+    </body>
+</html>
